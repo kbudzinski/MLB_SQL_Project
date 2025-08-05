@@ -1,79 +1,85 @@
-# MLB_SQL_Project
-💸 MLB Spending vs Performance Analysis
-Author: Kevin Budzinski
-Tableau Dashboard: MLB Spending Performance
+# 💸 MLB Spending vs Performance Analysis
 
-📊 Overview
+**Author:** Kevin Budzinski  
+**Tableau Dashboard:** [MLB Spending Performance](https://public.tableau.com/app/profile/kevin.budzinski/viz/mlbworkbook/MLBSpendingPerformance)
+
+---
+
+## 📊 Overview
+
 This project explores the relationship between MLB team payrolls and on-field performance from 2019 to 2023. Using SQL for analysis and Tableau for visualization, I compared team spending to success metrics like wins, run differential, and fan attendance.
 
-🗃️ Data Sources
-Team performance data: Lahman Baseball Database (imported from CSV)
+---
 
-Payroll data: Compiled manually from public MLB financial reports (2019–2023)
+## 🗃️ Data Sources
 
-The data was analyzed in SQL and then exported to CSV files, which were used separately in Tableau to build the dashboard.
+- **Team performance data**: Lahman Baseball Database (imported from CSV)
+- **Payroll data**: Compiled manually from public MLB financial reports (2019–2023)
 
-🧮 SQL Analysis
+The data was analyzed in SQL and exported to CSV files, which were then used separately in Tableau to build the dashboard.
+
+---
+
+## 🧮 SQL Analysis
+
 All insights were generated using SQL queries, including:
 
-League and division average payrolls
+- League and division average payrolls  
+- Payroll vs league/division averages  
+- Win percentage and wins vs league average  
+- Cost per win, cost per run, and wins per dollar  
+- Attendance efficiency
 
-Payroll vs league/division averages
+### 📂 SQL Files
 
-Win percentage and wins vs league average
+- `clean_data.sql` – Data import and cleaning  
+- `mlb_metrics.sql` – Analytical queries
 
-Cost per win, cost per run, and wins per dollar
+---
 
-Attendance efficiency
+## 📈 Tableau Dashboard
 
-📂 SQL Files:
+The Tableau dashboard was built using CSVs exported from SQL. It includes:
 
-clean_data.sql: Data import and cleaning
+- Filters by Year, League, and Division  
+- Scatter plot of Wins vs Payroll  
+- Trend line for average performance  
+- KPIs like Cost per Win and Wins per Dollar  
+- League and division comparisons
 
-mlb_metrics.sql: Analytical queries
+🔗 [**Explore the Dashboard**](https://public.tableau.com/app/profile/kevin.budzinski/viz/mlbworkbook/MLBSpendingPerformance)
 
-📈 Tableau Dashboard
-The Tableau dashboard was built using CSVs exported from the SQL queries. It features:
+---
 
-Filters by Year, League, and Division
+## 🛠️ Tools Used
 
-Scatter plot of Wins vs Payroll
+- **SQL (MySQL Workbench)** – Data analysis and transformation  
+- **Tableau Public** – Visualization using exported CSVs  
+- **Excel/Google Sheets** – CSV cleanup and formatting
 
-Trend line for average performance
+---
 
-KPIs like Cost per Win and Wins per Dollar
+## 📌 Key Takeaways
 
-League and division comparisons
+- High payroll doesn’t guarantee wins  
+- Some teams consistently outperform their spending levels  
+- Cost-efficiency varies widely across teams and seasons
 
-🔗 Explore Dashboard
+---
 
-🛠️ Tools Used
-SQL (MySQL Workbench) – Data analysis and transformation
+## 📥 How to Recreate
 
-Tableau Public – Visualization using exported CSVs
+1. Import Lahman team data and payroll data into MySQL  
+2. Run queries from `mlb_metrics.sql` to generate insights  
+3. Export query results to CSV  
+4. Load CSVs into Tableau for visualization (no live DB connection used)
 
-Excel/Google Sheets – Basic formatting and prep of CSVs
+---
 
-📌 Key Takeaways
-High payroll doesn’t guarantee wins.
+## 📧 Contact
 
-Some teams consistently outperform their spending level.
-
-Cost-efficiency varies widely across teams and seasons.
-
-📥 How to Recreate
-Import Lahman team data and compiled payrolls into MySQL.
-
-Run queries from mlb_metrics.sql to generate insights.
-
-Export relevant query results to CSV.
-
-Import CSVs into Tableau and build visuals manually (no live DB connection used).
-
-📧 Contact
 Have questions or want to collaborate?
 
-📧 kevinbudzinski54@gmail.com
-🔗 Tableau Public
+📧 kevinbudzinski54@gmail.com  
+🔗 [Tableau Public Profile](https://public.tableau.com/app/profile/kevin.budzinski)
 
-Let me know if you’d like me to generate this as a downloadable file or tweak anything else!
